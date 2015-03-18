@@ -2,7 +2,9 @@
 
 public var enemy : Rigidbody;
 private var tick : float = 0;
-public var speed : float = 5;
+private var speed : float = 0;
+public var minSpeed : float = 0;
+public var maxSpeed : float = 5;
 public var paso : float = 1;
 
 function Start () {
@@ -12,13 +14,13 @@ function Start () {
 function Update () {
 
 	tick += Time.deltaTime;
-	speed = Random.Range(0.0f, 5.0f);
-	var offsetZ = Random.Range(-5.0f, 5.0f);
-	var offsetY = Random.Range(-5.0f, 3.0f);
 	
 	if (tick>=paso) {
-		
+		speed = Random.Range(minSpeed, maxSpeed);
+	var offsetZ = Random.Range(-5.0f, 5.0f);
+	var offsetY = Random.Range(-5.0f, 3.0f);
 		tick = 0;
+		
 		var position : Vector3 =
 			new Vector3(transform.position.x,
 						transform.position.y+offsetY,

@@ -410,7 +410,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5442448, guid: e698463479695074486f2facbf08d25e, type: 2}
-  speed: 5
+  minSpeed: 0
+  maxSpeed: 6
   paso: .300000012
 --- !u!4 &144004838
 Transform:
