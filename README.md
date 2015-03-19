@@ -1,5 +1,5 @@
 # WatermelonAttackVR on Unity5.0 pro version
-![WatermelonAttackVR](http://es.zimagez.com/full/f2572eb46e1da7bc817defaa1cf6b75458d434d8710f7c7a256e1b225cb5e121.php)
+![WatermelonAttackVR](http://i.imgur.com/lxptN4P.png)
 
 Task List
 ---------
@@ -11,7 +11,7 @@ Task List
   - Visually similar model with animations for the third person view.
   - Better controll of the character (better jump).
   - Add 3D Sound.
-  - Lobby sscene with 3D levels gallery. Something like this: [http://goo.gl/MHGL87](http://goo.gl/MHGL87).
+  - Lobby sscene with 3D levels gallery. Something like this: [http://goo.gl/MHGL87](http://i.imgur.com/LFiaHH4.jpg).
   - Pause menu with Difficulty Selector (changing speed variables to spawn watermelons or others).
     - Easy, medium, hard, chaos.
   - Remodel wooden fences and signs.
