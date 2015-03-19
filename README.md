@@ -11,7 +11,9 @@ Task List
   - Visually similar model with animations for the third person view.
   - Better controll of the character (better jump).
   - Add 3D Sound.
-  - Lobby sscene with 3D levels gallery. Something like this: [http://goo.gl/MHGL87](http://goo.gl/MHGL87)
+  - Lobby sscene with 3D levels gallery. Something like this: [http://goo.gl/MHGL87](http://goo.gl/MHGL87).
+  - Pause menu with Difficulty Selector (changing speed variables to spawn watermelons or others).
+    - Easy, medium, hard, chaos.
   
 
 Legend:
