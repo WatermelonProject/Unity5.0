@@ -14,6 +14,7 @@ Task List
   - Lobby sscene with 3D levels gallery. Something like this: [http://goo.gl/MHGL87](http://goo.gl/MHGL87).
   - Pause menu with Difficulty Selector (changing speed variables to spawn watermelons or others).
     - Easy, medium, hard, chaos.
+  - Remodel wooden fences and signs.
   
 
 Legend:
