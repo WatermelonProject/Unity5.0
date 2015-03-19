@@ -17,8 +17,8 @@ function Update () {
 	
 	if (tick>=paso) {
 		speed = Random.Range(minSpeed, maxSpeed);
-	var offsetZ = Random.Range(-5.0f, 5.0f);
-	var offsetY = Random.Range(-5.0f, 3.0f);
+	    var offsetZ = Random.Range(-5.0f, 5.0f);
+	    var offsetY = Random.Range(-5.0f, 3.0f);
 		tick = 0;
 		
 		var position : Vector3 =
