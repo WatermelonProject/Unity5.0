@@ -4,7 +4,7 @@
 Task List
 ---------
   - 2 Scripts to Pause Function.
-    - Script for "P button" pause and we show menu (Enemies frozen).
+    - ✓ Script for "P button" pause and we show menu (Enemies frozen).
     - Script for initialize level (character frozen but watermelons moving)(Countdown).
   - Colorful countdown start (5, 4, 3...)(can be within the pause script ↑) with English voice.
   - Third person option on press "V" button.
