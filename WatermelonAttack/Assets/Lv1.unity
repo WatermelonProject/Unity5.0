@@ -712,6 +712,7 @@ GameObject:
   - 4: {fileID: 283881649}
   - 114: {fileID: 283881648}
   - 114: {fileID: 283881647}
+  - 114: {fileID: 283881646}
   m_Layer: 0
   m_Name: OVRCameraRig 3rd Person
   m_TagString: Untagged
@@ -719,6 +720,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &283881646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283881645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1f9d05ac9d3c543baa3a2527b184fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1646933757}
+  distanceFromTarget: 7.86000013
+  distanceFromGround: 6.94000006
 --- !u!114 &283881647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,7 +774,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 283881645}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
-  m_LocalPosition: {x: 10.5, y: 6.94000006, z: 0}
+  m_LocalPosition: {x: 10.5000029, y: 6.93999958, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 661554480}
@@ -880,6 +895,7 @@ GameObject:
   - 223: {fileID: 382022334}
   - 114: {fileID: 382022333}
   - 114: {fileID: 382022332}
+  - 114: {fileID: 382022335}
   m_Layer: 0
   m_Name: CanvasR
   m_TagString: Untagged
@@ -959,6 +975,20 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &382022335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 382022330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94128938b0fef4047af682719cac1e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera1stPerson: {fileID: 120106729}
+  camera3rdPerson: {fileID: 937008725}
+  indicator: 0
 --- !u!1 &384966763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,6 +2954,17 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
   m_PrefabInternal: {fileID: 215981743}
+--- !u!114 &1929493281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929493280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2aa002c75cf7e48b5237bcf5b55fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1929493283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2939,7 +2980,6 @@ MonoBehaviour:
   Rcam1st: {fileID: 120106729}
   centerCam1st: {fileID: 151238372}
   OVRCameraRig3rd: {fileID: 283881645}
-  is1stPerson: 0
 --- !u!1 &2010048936
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,6 +3151,7 @@ GameObject:
   - 223: {fileID: 2013029149}
   - 114: {fileID: 2013029148}
   - 114: {fileID: 2013029147}
+  - 114: {fileID: 2013029150}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -3190,6 +3231,20 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &2013029150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013029145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94128938b0fef4047af682719cac1e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera1stPerson: {fileID: 964885693}
+  camera3rdPerson: {fileID: 661554479}
+  indicator: 0
 --- !u!1 &2042997037
 GameObject:
   m_ObjectHideFlags: 0

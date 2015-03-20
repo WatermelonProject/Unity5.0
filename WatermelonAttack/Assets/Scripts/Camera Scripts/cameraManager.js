@@ -10,10 +10,10 @@ var centerCam1st : GameObject;
 
 var OVRCameraRig3rd : GameObject;
 
-var is1stPerson : boolean;
+static var is1stPerson : boolean;
 
 function Start () {
-	is1stPerson = true;
+	
 }
 
 function Update () {

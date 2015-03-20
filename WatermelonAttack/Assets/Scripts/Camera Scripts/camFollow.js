@@ -12,8 +12,8 @@ function Start () {
 
 function Update () {
 	
-	transform.position.x = target.position.x;
+	transform.position.x = target.position.x + distanceFromTarget;
 	transform.position.y = target.position.y + distanceFromGround;
-	transform.position.z = target.position.z + distanceFromTarget;
+	transform.position.z = target.position.z;
 	
 }
