@@ -9,6 +9,9 @@ function Start () {
  
 	GetComponent("OVRPlayerController").Acceleration = 0.0;
 	GetComponent("OVRPlayerController").RotationAmount = 0.0;
+	
+	GameObject.Find("Countdown").GetComponent(AudioSource).Play();
+
 
 }
  
@@ -36,16 +39,17 @@ function Update () {
         	GameObject.Find("ImageCountdown").GetComponent(UnityEngine.UI.RawImage).texture = number1;
         }
         
-        
-        
         if ( timeLeft < 0 ) {
-        
-            GameObject.Find("Countdown").active = false;
             
+            GameObject.Find("ImageCountdown").GetComponent(UnityEngine.UI.RawImage).enabled = false;
 			GetComponent("OVRPlayerController").Acceleration = 0.4;
 			GetComponent("OVRPlayerController").RotationAmount = 1.5;
 			
-		
-        }  
-             
+        }
+        
+        if ( timeLeft < -1 ) {
+        	GameObject.Find("Countdown").SetActive(false);
+        	GetComponent("CountDown").enabled = false;
+        }
+  
 }
