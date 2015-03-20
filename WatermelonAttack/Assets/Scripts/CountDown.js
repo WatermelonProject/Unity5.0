@@ -9,10 +9,7 @@ function Start () {
  
 	GetComponent("OVRPlayerController").Acceleration = 0.0;
 	GetComponent("OVRPlayerController").RotationAmount = 0.0;
-	
 	GameObject.Find("Countdown").GetComponent(AudioSource).Play();
-
-
 }
  
 function Update () {
