@@ -12,7 +12,7 @@ function Start () {
 
 function Update () {
 	if(Input.GetKeyDown(KeyCode.Escape) && finished) {
-		Application.LoadLevel("game");
+		Application.LoadLevel(Application.loadedLevel);;
 	}
 }
 

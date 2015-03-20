@@ -11,5 +11,5 @@ function Update () {
 }
 
 function Dead(){
-	Application.LoadLevel("game");
+	Application.LoadLevel(Application.loadedLevel);
 }
