@@ -14,8 +14,8 @@ SceneSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: .788235366, g: .909803987, b: .972549081, a: 1}
   m_FogMode: 3
   m_FogDensity: .00999999978
   m_LinearFogStart: 0
@@ -68,7 +68,7 @@ LightmapSettings:
     m_TextureCompression: 0
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 112000000, guid: c459eb2a201eff141b61a6bce94bd8b2,
+  m_LightmapSnapshot: {fileID: 112000000, guid: c45e31245d7b47c4fb5d58712ddc6b6c,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -624,11 +624,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000002, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: far clip plane
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: far clip plane
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 2}
       propertyPath: m_RootOrder
@@ -1277,7 +1277,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: .100000001
-  far clip plane: 100
+  far clip plane: 1000
   field of view: 106.092934
   orthographic: 0
   orthographic size: 5
@@ -1745,7 +1745,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: .100000001
-  far clip plane: 100
+  far clip plane: 1000
   field of view: 106.092934
   orthographic: 0
   orthographic size: 5
@@ -1911,6 +1911,83 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1027476655}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1068703156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 159940, guid: a3af1a63e66ff5440b02b28fc2bbf5ac, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1068703160}
+  - 33: {fileID: 1068703159}
+  - 23: {fileID: 1068703158}
+  - 114: {fileID: 1068703157}
+  m_Layer: 0
+  m_Name: Clouds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1068703157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11471998, guid: a3af1a63e66ff5440b02b28fc2bbf5ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068703156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42e81f6a2ea0349b1e5469dd1e1da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: .0250000004
+  offset: 0
+--- !u!23 &1068703158
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2365442, guid: a3af1a63e66ff5440b02b28fc2bbf5ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068703156}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 9c1c3ebb55230644d973c8a4c1e7d570, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1068703159
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3349392, guid: a3af1a63e66ff5440b02b28fc2bbf5ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068703156}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1068703160
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 422408, guid: a3af1a63e66ff5440b02b28fc2bbf5ac, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068703156}
+  m_LocalRotation: {x: 0, y: .317552984, z: 0, w: .948240578}
+  m_LocalPosition: {x: -.300000012, y: -21.5699997, z: 4.19999981}
+  m_LocalScale: {x: 1574.47375, y: 6.07361841, z: 1574.47424}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &1250659442
 GameObject:
   m_ObjectHideFlags: 0
