@@ -7,8 +7,8 @@ public var number5 : Texture;
 
 function Start () {
  
-	GetComponent("OVRGamepadController").enabled = false;
-	GetComponent("OVRPlayerController").enabled = false;
+	GetComponent("OVRPlayerController").Acceleration = 0.0;
+	GetComponent("OVRPlayerController").RotationAmount = 0.0;
 
 }
  
@@ -42,8 +42,8 @@ function Update () {
         
             GameObject.Find("Countdown").active = false;
             
-			GetComponent("OVRGamepadController").enabled = true;
-			GetComponent("OVRPlayerController").enabled = true;
+			GetComponent("OVRPlayerController").Acceleration = 0.4;
+			GetComponent("OVRPlayerController").RotationAmount = 1.5;
 			
 		
         }  
