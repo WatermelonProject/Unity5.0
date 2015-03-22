@@ -20,3 +20,16 @@ Task List
 Legend:
 -------
   - ✓ Completed
+
+  
+Controls:
+-------
+  - A,S,D,W or ←,↓,→,↑ to Move Character
+  - Press SPACE to Jump
+  - Hold SHIFT to Sprint
+  - Press LEFT BUTTON MOUSE to Shoot
+  - Use MOUSE to Rotate Camera
+  - Press V to Change Camera Mode
+  - Press P to Pause
+  - Press TAB to Show FPS and more
+  - Press ESC to Quit
