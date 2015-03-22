@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 private var finished : boolean = false;
+public var resetKey : KeyCode = KeyCode.Return; 
 public var finishedText : Canvas;
 public var finishedTextR : Canvas;
 
@@ -11,7 +12,7 @@ function Start () {
 }
 
 function Update () {
-	if(Input.GetKeyDown(KeyCode.Escape) && finished) {
+	if(Input.GetKeyDown(resetKey) && finished) {
 		Application.LoadLevel(Application.loadedLevel);;
 	}
 }

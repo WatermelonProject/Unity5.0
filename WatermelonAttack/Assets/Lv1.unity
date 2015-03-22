@@ -2175,6 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed534279ca47464ca1077e7aed88340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resetKey: 13
   finishedText: {fileID: 2013029149}
   finishedTextR: {fileID: 382022334}
 --- !u!114 &1646933754
