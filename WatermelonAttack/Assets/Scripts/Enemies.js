@@ -1,6 +1,10 @@
 ﻿#pragma strict
 
 public var enemy : Rigidbody;
+public var left : float = 5.0;
+public var right : float = 5.0;
+public var up : float = 5.0;
+public var down : float = 3.0;
 private var tick : float = 0;
 private var speed : float = 0;
 public var minSpeed : float = 0;
@@ -17,8 +21,8 @@ function Update () {
 	
 	if (tick>=paso) {
 		speed = Random.Range(minSpeed, maxSpeed);
-	    var offsetZ = Random.Range(-5.0f, 5.0f);
-	    var offsetY = Random.Range(-5.0f, 3.0f);
+	    var offsetZ = Random.Range(-left, right);
+	    var offsetY = Random.Range(-down, up);
 		tick = 0;
 		
 		var position : Vector3 =

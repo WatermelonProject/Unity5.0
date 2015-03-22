@@ -1525,7 +1525,7 @@ MonoBehaviour:
   HmdRotatesY: 1
   GravityModifier: .300000012
   btnJump: 32
-  useProfileHeight: 1
+  useProfileHeight: 0
 --- !u!143 &14361604
 CharacterController:
   m_ObjectHideFlags: 1
