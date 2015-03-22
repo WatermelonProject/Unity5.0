@@ -13,6 +13,9 @@ public class riftStandardScripts : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.R)) {
 			OVRManager.display.RecenterPose();
 		}
-	
+
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			Application.Quit();
+		}
 	}
 }
