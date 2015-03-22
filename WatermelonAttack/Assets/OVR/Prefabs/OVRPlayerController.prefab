@@ -255,7 +255,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e437ffb7de5844b42b64f89763daf449, type: 3}
   m_Name: 
@@ -269,7 +269,10 @@ MonoBehaviour:
   - Hit 'return' to reset..
   Scenes:
   - VRDemo_Tuscany
+  IPDIncrement: .000250000012
   PredictionIncrement: .00100000005
+  FOVIncrement: .200000003
+  HeightIncrement: .00999999978
   SpeedRotationIncrement: .0500000007
   LayerName: Default
   CrosshairImage: {fileID: 2800000, guid: 64ce76f827a71b44da62c30c0b506fd2, type: 3}
@@ -351,7 +354,6 @@ MonoBehaviour:
   RotationRatchet: 45
   HmdRotatesY: 1
   GravityModifier: 1
-  btnJump: 32
   useProfileHeight: 1
 --- !u!114 &11400020
 MonoBehaviour:
@@ -370,9 +372,6 @@ CharacterController:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
   m_Radius: .5
@@ -392,3 +391,4 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100008}
   m_IsPrefabParent: 1
+  m_IsExploded: 1
