@@ -1,0 +1,36 @@
+1. Parent a blackout cube prefab to the left and right cameras of your OVRCameraController.
+
+OVRCameraController
+  |
+  -- CameraLeft
+  |  |
+     -- blackout cube prefab
+  |
+  -- CameraRight
+     |
+     -- blackout cube prefab
+
+2. Place the fadeInOut script on the OVRCameraController
+
+3. There 2 variables named Blackout Cube L and Blackout Cube R need to be assigned to the prefabs you parented earlier.
+
+Open the other two scripts to read ho to use them. 
+
+The wallFader can be used for blacking out the cameras when you lean into an object. The example script shows you the basics of using the fader. You have ability to fade in or fade out, and you have the option of loading a level after fading or not.
+
+---------------------------------
+A fix for the clipping issue
+---------------------------------
+
+Sometimes an object can be visible thru the blackout cubes if it gets too close, and this should fix that.
+
+1. Create a new layer. For example we can name it "blackout Cubes".
+2. Add the blackuot Cubes to that new layer
+3. Select both cameras and set the "Clear Flags" to depth only.
+4. Set the "Culling Mask" to the layer we created "blackout Cubes".
+5. remove the audio listener from the "CenterEyeAnchor".
+6. uncheck "Use Positional Tracking", "Time Warp", and "Reset Tracker On Load", Then check "Monoscopic". (for better performance)
+
+Now You have a set of cameras just for fading that will only render the blackout cubes only.
+
+7. Add another Camera controller to the scene and use that as your main camera rig
