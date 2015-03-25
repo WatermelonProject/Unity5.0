@@ -23,9 +23,9 @@ function Update () {
 	}
 }
 
-function OnCollisionEnter (collision : Collision) {
+function OnTriggerEnter (other : Collider) {
 
-	if (collision.gameObject.tag=="player") {
+	if (other.gameObject.tag=="player") {
 		
 		if (endOfGame) {
 			
