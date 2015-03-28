@@ -15,6 +15,11 @@ public class riftStandardScripts : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Escape)) {
+
+			if (Application.loadedLevelName == "Win") {
+				Application.OpenURL ("http://twitter.com/intent/tweet?text=@dragostzgz");
+			}
+
 			Application.Quit();
 		}
 	}
