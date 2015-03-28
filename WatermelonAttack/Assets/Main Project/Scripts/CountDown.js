@@ -52,7 +52,7 @@ function Update () {
 			
         }
         
-        if ( timeLeft < -1 ) {
+        if ( timeLeft < -2 ) {
         	countdownObj.SetActive(false);
         	GetComponent("CountDown").enabled = false;
         }

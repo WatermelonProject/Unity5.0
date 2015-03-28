@@ -13,11 +13,13 @@
 		CGPROGRAM
 		#pragma surface surf Unlit
 		
-		half4 LightingUnlit(SurfaceOutput s, half3 lightDir, half atten) {
-			return half4(s.Albedo, s.Alpha);
+		fixed4 LightingUnlit(SurfaceOutput s, fixed3 lightDir, fixed atten) {
+			fixed4 c;
+			c.rgb = s.Albedo*0.7f;
+			//c.a = s.Alpha;
+			return c;
 		}
-
-		sampler2D _MainTex;
+		
 		samplerCUBE _Cube;
 
 		struct Input {
