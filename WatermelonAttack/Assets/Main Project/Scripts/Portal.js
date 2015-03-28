@@ -1,9 +1,7 @@
 ﻿#pragma strict
 
 private var finished : boolean = false;
-public var resetKey : KeyCode = KeyCode.Return; 
-public var finishedText : Canvas;
-public var finishedTextR : Canvas;
+public var resetKey : KeyCode = KeyCode.Return;
 
 var OVRCameraController : Transform;
 
@@ -29,10 +27,8 @@ function OnTriggerEnter (other : Collider) {
 		
 		if (endOfGame) {
 			
-			finished = true;
-			finishedText.enabled = true;
-			finishedTextR.enabled = true;
-			Time.timeScale = 0.0;
+			OVRCameraController.GetComponent(fadeInOut).levelToLoad = "Win";
+			OVRCameraController.GetComponent(fadeInOut).changeLevelFade = true;
 			
 		} else {
 			

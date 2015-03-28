@@ -316,16 +316,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 490706, guid: 1a83f831da412b34e877ba44a202c4c1, type: 2}
   m_PrefabInternal: {fileID: 333277801}
---- !u!223 &333277803
-Canvas:
-  m_PrefabParentObject: {fileID: 22397296, guid: 1a83f831da412b34e877ba44a202c4c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 333277801}
---- !u!223 &333277804
-Canvas:
-  m_PrefabParentObject: {fileID: 22338378, guid: 1a83f831da412b34e877ba44a202c4c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 333277801}
 --- !u!1 &333740963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,11 +1291,11 @@ Prefab:
     - target: {fileID: 11443110, guid: a994eb8e5889d12418a1e576af5639d6, type: 2}
       propertyPath: finishedText
       value: 
-      objectReference: {fileID: 333277803}
+      objectReference: {fileID: 0}
     - target: {fileID: 11443110, guid: a994eb8e5889d12418a1e576af5639d6, type: 2}
       propertyPath: finishedTextR
       value: 
-      objectReference: {fileID: 333277804}
+      objectReference: {fileID: 0}
     - target: {fileID: 11443110, guid: a994eb8e5889d12418a1e576af5639d6, type: 2}
       propertyPath: endOfGame
       value: 1
@@ -1321,7 +1311,7 @@ Prefab:
     - target: {fileID: 2375004, guid: a994eb8e5889d12418a1e576af5639d6, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d0a02a6cedd20a448165395ca32901b, type: 2}
+      objectReference: {fileID: 2100000, guid: 0bb86d4fb888cdc449f52311438d5dde, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a994eb8e5889d12418a1e576af5639d6, type: 2}
   m_IsPrefabParent: 0
