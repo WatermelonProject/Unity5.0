@@ -15,12 +15,32 @@ Task List
   - Pause menu with Difficulty Selector (changing speed variables to spawn watermelons or others).
     - Easy, medium, hard, chaos.
   - ✓ Remodel wooden fences and signs.
+  - Add health
+  - New Materials (Hice, Fire, Hud)
+  - Adrenaline Bar to Pause (Paused or Slowed)
+  - Destructible Watermelons
   
 
 Legend:
 -------
   - ✓ Completed
 
+
+Ideas:
+------
+  - Varios caminos posibles por nivel
+  - Menu
+    - Dificultad
+    - Sonido
+    - Graficos
+  - Salpicaduras o sangre en pantalla al impactar
+  - Crear un BOSS
+  - Sandias podridas (salpican y dejan ciego, mareo, suelo resbaladizo, quiza)
+  - Monedas
+    - camino de monedas?
+    - minimo de monedas para completar?
+    - 3 por nivel?
+    - desbloqueo de niveles especiales?
   
 Controls:
 -------
